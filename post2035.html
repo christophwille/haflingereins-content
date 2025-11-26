@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveaugeber im Bezintank</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .breadcrumb { font-size: 14px; color: #666; margin-bottom: 10px; }
+        .breadcrumb a { color: #0066cc; text-decoration: none; }
+        .post { background: #fff; padding: 20px; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .post-header { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
+        .post-title { font-size: 24px; font-weight: bold; margin: 0 0 10px 0; }
+        .post-meta { font-size: 14px; color: #666; }
+        .post-body { line-height: 1.6; }
+        .reply { border-left: 3px solid #0066cc; margin-left: 20px; }
+        .category { display: inline-block; background: #e0e0e0; padding: 3px 8px; border-radius: 3px; font-size: 12px; margin-right: 5px; }
+        .stats { font-size: 14px; color: #666; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &raquo; 
+            <a href="section3.html">Haflinger</a> &raquo; 
+            Niveaugeber im Bezintank
+        </div>
+    </div>
+    <div class="post">
+        <div class="post-header">
+            <h1 class="post-title">Niveaugeber im Bezintank</h1>
+            <div class="post-meta">
+                Posted by <strong>Michael Janczer</strong> on 2010-01-18 18:47
+            </div>
+            <div class="stats">
+                Views: 8270 | Replies: 5
+            </div>
+        </div>
+        <div class="post-body">
+            <p>Hallo Freunde!</p>
+<p>Betr. den Geber der das L&auml;mpchen "Reserve" ansteuert:&nbsp; hat schon jemand in der Runde versucht das 12V 2W L&auml;mpchen auf LED umzubauen? Wenn ja, wie ist das gelungen?&nbsp; Bin f&uuml;r jede Info dankbar.</p>
+<p>Gr&uuml;&szlig;e, euer AP700</p>
+        </div>
+    </div>
+    <div class="post reply">
+        <div class="post-header">
+            <strong>Helmut Sommereder</strong> replied on 2010-01-18 21:52
+        </div>
+        <div class="post-body">
+            <p>Hallo Michael!</p>
+<p>Ist der Geber ein normaler Schwimmerschalter, der bei zu niederen Benzinstand EIN schaltet? Dann ist Dein Wunsch kein Problem. Wir brauchen vor der LED einen Vorwiderstand. Die Gr&ouml;&szlig;e ist abh&auml;ngig von der LED, aber leicht zu berechnen.&nbsp; Rv=(Uo-Uf):If. Rv ist der Vorwiderstand, Uo die Versorgungsspannung (12 Volt), Uf die Vorw&auml;rtsspannung der LED und If der Strom, der durch die LED flie&szlig;en soll. Z.B. eine LED If= 0,035A und Uf = 2,2 V ergibt bei einer Versorgungsspannung von 12 V einen Rv von 280 Ohm. Da 280 Ohm keine Normgr&ouml;&szlig;e ist, nimmst Du den n&auml;chst h&ouml;heren, der hat 330 Ohm. Der k&uuml;rzere Draht an der LED ist die Kathode und mu&szlig; am -Pol angeschlossen werden.&nbsp; </p>
+<p>F&uuml;r die LED k&ouml;nnten wir aus Alu eine Fassung drehen, die ich nachher eloxiere.</p>
+<p>Liebe Gr&uuml;&szlig;e</p>
+<p>Helmut</p>
+<p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="post reply">
+        <div class="post-header">
+            <strong>HansMesserklinger</strong> replied on 2010-01-18 23:04
+        </div>
+        <div class="post-body">
+            <p>Servus</p>
+<p>Das ist kein Schwimmerschalter, sondern ein NTC. </p>
+<p>Gr&uuml;&szlig;e</p>
+        </div>
+    </div>
+    <div class="post reply">
+        <div class="post-header">
+            <strong>Helmut Sommereder</strong> replied on 2010-01-19 10:43
+        </div>
+        <div class="post-body">
+            <p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Guten Morgen!</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Eine kurze Erkl&auml;rung f&uuml;r Nichtelektriker:</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Hei&szlig;leiter oder NTC Widerst&auml;nde (Negativ Temperature <span style="mso-spacerun: yes;">&nbsp;</span>Coefficient Thermistors) <span style="mso-spacerun: yes;">&nbsp;</span>sind spezielle elektrische Widerst&auml;nde, die bei hohen Temperaturen elektrischen Strom besser leiten als bei tiefen Temperaturen. D.h., sie haben einen negativen Temperaturkoeffizienten.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Im Haflinger ist ein solcher NTC in Serie mit der Kraftstoffkontrollleuchte <span style="mso-spacerun: yes;">&nbsp;</span>geschaltet. Es flie&szlig;t somit (bei eingeschalteter Z&uuml;ndung) immer <span style="mso-spacerun: yes;">&nbsp;</span>ein Strom durch die Kontrollleuchte und den NTC. <span style="mso-spacerun: yes;">&nbsp;</span>Der NTC ist im Benzintank eingebaut und taucht bei ausreichendem Benzinstand im Tank in das Benzin ein. Das Benzin k&uuml;hlt somit den NTC.<span style="mso-spacerun: yes;">&nbsp; </span>Der elektr. Widerstand ist dadurch hoch, der Stromflu&szlig; <span style="mso-spacerun: yes;">&nbsp;</span>gering <span style="mso-spacerun: yes;">&nbsp;</span>und es kommt zu keinem Leuchten der Kontrolllampe. Wenn der Benzinstand sinkt und der NTC nicht mehr durch das Benzin gek&uuml;hlt wird, steigt seine Temperatur durch den st&auml;ndig durchflie&szlig;enden Strom <span style="mso-spacerun: yes;">&nbsp;</span>stark an, dadurch verringert sich sein elektr. Widerstand, der Stromflu&szlig; steigt und die Kontrollleuchte beginnt <span style="mso-spacerun: yes;">&nbsp;</span>zum Leuchten.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Der Vorteil vom NTC gegen&uuml;ber einem Schwimmerschalter, der die Kontrollleuchte ein- bzw. aus &ndash;schaltet ist der, dass keinerlei bewegliche Teile vorhanden sind.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Es ist aber auch bei dieser Schaltung kein Problem, eine mit einem Vorwiderstand <span style="mso-spacerun: yes;">&nbsp;</span>versehene LED parallel zur Kontrollleuchte zu schalten. Die Kontrollleuchte k&ouml;nnte auch durch einen fixen Widerstand ersetzt werden. Die Kontrollleuchte bzw. der statt dieser eingesetzte Widerstand muss <span style="mso-spacerun: yes;">&nbsp;</span>auf jeden Fall <span style="mso-spacerun: yes;">&nbsp;</span>vorhanden sein, um den ausreichenden Stromflu&szlig; im NTC aufrecht zu erhalten.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Ich hoffe mich einigerma&szlig;en verst&auml;ndlich ausgedr&uuml;ckt zu haben und sende wie &uuml;blich die besten Gr&uuml;&szlig;e von der Donau, 20km westlich von Wien.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><span style="font-family: Calibri; font-size: small;">Helmut </span></p>
+        </div>
+    </div>
+    <div class="post reply">
+        <div class="post-header">
+            <strong>HansMesserklinger</strong> replied on 2010-01-20 19:55
+        </div>
+        <div class="post-body">
+            <p>Sehr gut verst&auml;ndlich, gute Arbeit.</p>
+<p>Ich bin zwar kein Elektroniker, aber ich glaube, da&szlig; es nicht unproblematisch ist, die Kontrolllampe durch einen linearen Widerstand zu ersetzen, da sie ja keinen linearen Widerstand darstellt, sondern ein PTC ist.&nbsp; D.h. sie hat einen Widerstand von ca. 15 Ohm und wenn sie leuchtet ca. 70 Ohm. Wenn also der Ersatzwiderstand zu hoch ist, schaltet der NTC nicht durch und wenn er zu niedrig ist, kann der NTC abbrennen und dann fliegt m&ouml;glicherweise der Tank in die Luft. Die Reihenschaltung NTC - PTC ist durchdacht und die Gesamtwiderstandsbilanz ausgeglichener.</p>
+<p>Michael Janczer hatte mich vorab in dieser Sache kontaktiert, weil die Anzeige bei arktischen Temperaturen ausgefallen war und er wusste, dass ich f&uuml;r die Nachfertigung der Geber durch Prokschi die technische Abkl&auml;rung gemacht habe. Der Grund f&uuml;r den Ausfall war offensichtlich, dass der NTC altert und wenn sich der Widerstandswert verdoppelt, geht bei niedrigen Temperaturen nichts mehr. Aber in der Werkstatt funktioniert es dann wieder.</p>
+<p>Wegen der Alterung, die ich an den seinerzeit von Constantin Kiesling zu Verf&uuml;gung gestellten Teilen gemessen habe, werde ich mit der Fa. EPCOS, dem Hersteller der NTC, Kontakt aufnehmen. Leider ist mein Kommilitone aus fr&uuml;heren Zeiten, der bis vor kurzem in dieser Fa. in Deutschlandsberg bzw. Shanghai t&auml;tig war, erst wieder in 6 Wochen erreichbar.</p>
+<p>Das von Michael bem&auml;ngelte schwache Licht der Signallampe ist darauf zur&uuml;ckzuf&uuml;hren, dass der NTC ja nie ganz durchschaltet&nbsp; und daher nie die erforderlichen 12 Volt anliegen. Wenn ich einen Geber bekomme, mache ich eine Messung.</p>
+<p>Gr&uuml;&szlig;e aus Graz</p>
+        </div>
+    </div>
+    <div class="post reply">
+        <div class="post-header">
+            <strong>Michael Janczer</strong> replied on 2010-01-21 12:55
+        </div>
+        <div class="post-body">
+            <p>Danke f&uuml;r die Informationen Hans! </p>
+<p>Langsam lichten sich die Schleier. Am NTC wird der Ohmsche Widerstand mit steigender Temp., wenn er also nicht mehr durch Benzin bedeckt ist, geringer (Diagramm &auml;hnl. einer Exponentialkurve)&nbsp; Damit beginnt das 2 Watt L&auml;mpchen zu leuchten, gleichzeitig wird der Widerstand des Gl&uuml;hfadens gr&ouml;&szlig;er, denn ein Gl&uuml;hfaden wirkt wie ein PTC. Das bewirkt eine Art Strombegrenzung. Je nachdem welche Spannung in die Formel eingesetzt wird ( 12 ; 13 V ; Leistung 2 W)&nbsp; wird ein Strom von 0,172 bis&nbsp; 0,167 Amp. erhalten. Das ist kein sehr hoher Strom. Gef&auml;hrlich kann es nur werden, wenn durch einen Isolationschaden dauernd +12 V am NTC anliegen und der Benzinstand unterhalb des NTC ist.&nbsp; Die L&ouml;sung der Niveau-Anzeige mittels eines NTC ist so schlecht nicht. Es gab damals wahrscheinlich nocht nicht die M&ouml;glichkeiten wie heute mit Reedschalter und / oder Klapp-Magnet-Schaltern den gleichen Effekt zu erzielen. Ich denke, es ist wichtig, da&szlig; in der Zuleitung zum NTC (der ja nur Masse durchschaltet) immer das vorgesehene L&auml;mpchen im Stromkreis ist, es wirkt auch wie eine Schmelzsicherung bei zuviel Strom.</p>
+<p>Probleml&ouml;sung: Austausch der original-Anzeigelampe (SWF) durch eine sehr &auml;hnliche, wo aber ein Standard BA9s 2 W L&auml;mpchen drin ist. Damit liegt auch der Gl&uuml;hfaden etwas n&auml;her an der roten Linse. Tats&auml;chlich ist es so, da&szlig; die Leuchtkraft des L&auml;mpchen mit Erw&auml;rmung des NTC langsam zunimmt, also ist der NTC noch in Ordnung. Kann aber ohne weiters so sein da&szlig; sein Widerstand durchs Alter bereits zugenommen hat. Dadurch gut m&ouml;glich da&szlig; das L&auml;mpchen, das anzeigt da&szlig; bereits mit der Reserve gefahren wird, sehr versp&auml;tet aufglimmte, gewi&szlig; auch durch die starke K&auml;lte.&nbsp; Als ich dann nachdem der Motor abgestorben war, mit einer Taschenlampe im Tank Nachschau hielt war da nur mehr ein feuchter Fleck am Boden....</p>
+<p>L.G. Michael Janczer</p>
+        </div>
+    </div>
+</body>
+</html>
